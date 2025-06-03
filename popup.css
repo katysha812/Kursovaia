@@ -1,0 +1,203 @@
+/*pop-up всплывающее окно*/
+
+.forms{
+    display: flex; /* Используем flexbox для размещения столбцов */
+    flex-wrap: wrap; /* Если нужно, чтобы столбцы переносились на новую строку */
+    margin-bottom: 10px;
+}
+
+.form-column {
+    flex: 1;  /* Занимает равную часть пространства по умолчанию */
+    margin-right: 20px; /* Отступ между колонками */
+    width: calc(50% - 10px);
+}
+
+.form-column input {
+    width: 100%; /* Чтобы поля занимали всю ширину столбца */
+    margin-bottom: 10px; /* Отступ между полями */
+    padding: 17px 20px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    color:89909f;
+    outline: none;
+}
+
+.form-column:last-child {
+    margin-right: 0;  /* Убираем отступ у последнего столбца */
+}
+
+.pop_up {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.pop_up.active {
+    display: block;
+    opacity: 1;
+}
+
+.pop_up_container{
+   display:flex;
+   width:100%;
+   height:100%;
+}
+
+.pop_up_body{
+    position: relative; /*потому что потом крестик с позицией absolute*/
+    padding: 50px 25px 60px 25px;
+    margin:auto;
+    width:auto;
+    background-color: #FEF6EF;
+    border-radius:20px;
+    text-align:center;
+}
+
+.pop_up_body p{
+    color: #DA627D;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.pop_up_body input{
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    color:89909f;
+    font-family: 'Inter', sans-serif;
+}
+
+.pop_up_body input:focus{
+    outline:none; /*убрать чёрную рамку при выделении*/
+}
+
+.pop_up_body button{
+   cursor: pointer;
+   display: block;
+   width: 330px;
+   margin:40px auto 0px auto;
+   border: 0;
+   color: #FEF6EF;
+   border-radius:10px;
+   background-color:#DA627D;
+   transition: all 500ms ease;
+   border-radius: 50px;
+   padding: 25px 50px; /*Отступы 15 пикселей по высоте и 30 по горизонтали*/
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.pop_up_body button:hover{
+    background: #ED8494;
+}
+
+.pop_up_close{
+  position: absolute;
+  top: 15px;
+  right:15px;
+  font-size:21px;
+  cursor:pointer;
+}
+
+.pop_up_body .block{
+    background: #ED8494;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop_up_body h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    color: #DA627D;
+}
+
+.pop_up_body .block h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: #DA627D;
+}
+
+.pop_up_body .block p{
+    color: #DA627D;
+    font-size: 38px;
+    font-weight: 700;
+    width: 350px;
+}
+
+.pop_up_body .block h1{
+    font-weight: 700;
+    font-size: 38px;
+    color: #FCEDDE;
+    margin-bottom: 10px;
+}
+
+.pop_up_body .block h3{
+    font-size: 18px;
+    color: #FCEDDE;
+    font-weight: 400;
+}
+
+.pop_up_body .block .email{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center; /* Центрирует элементы по горизонтальной оси. */
+}
+
+.pop_up_body .block .email input{
+    background: #FCEDDE;
+    outline: none;
+    border-radius: 7px;
+    width: 100%;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 25px;
+    color: #DA627D;
+    position: relative;
+    z-index: 1;
+    padding-right: 165px;
+}
+
+.pop_up_body .block input::placeholder{
+    color: #ED8494;
+    opacity: 0.7;
+}
+
+.pop_up_body .block .email .button2 {
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 8%;
+    z-index: 2;
+    margin-bottom: 13px;
+    padding: 13px 16px;
+    font-size: 17px;
+    width: auto;
+    min-width: 100px;
+    text-align: center;
+}

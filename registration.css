@@ -1,0 +1,111 @@
+/*Вкладка регистрации*/
+.wrapper3{
+    padding: 70px 0;
+    background: #DA627D;
+}
+.container-registration {
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px; /*Ширина контейнера*/
+    margin: 0 auto; /*Блок располагается по центру и имеет определенные отступы?*/
+}
+
+.container-registration h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FCEDDE;
+}
+
+.container-registration p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #fcedde;
+}
+
+.container-registration form{
+    margin: 80px auto;
+    width:600px;
+}
+
+.container-registration form .inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-registration form .inline > div{
+    width: 50%;
+}
+
+.container-registration form label{
+    color:#fcedde;
+    font-size: 18px;
+}
+
+.container-registration form input,
+.container-registration form textarea{
+    background: #fcedde;
+    border-radius: 10px;
+    border: 3px solid #e9a8b2;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #DA627D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.container-registration form .one-line{
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.container-registration form button{
+    cursor: pointer;
+    display: block;
+    width: 450px;
+    margin: 60px auto 0px auto;
+    border: 0;
+    color: #ED8494;
+    border-radius:10px;
+    background-color:#fcedde;
+    transition: all 500ms ease;
+    border-radius: 50px;
+    padding: 25px 50px; /*Отступы 25 пикселей по высоте и 50 по горизонтали*/
+    font-size: 25px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.container-registration form button:hover{
+    background: #ED8494;
+    color: #fcedde;
+}
+
+.container-registration a{
+    text-decoration: none;
+    color: #FCEDDE;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container-registration a:hover{
+    text-decoration: underline solid #FCEDDE 2px;
+}
+
+ .no-login {
+    display: block;
+    text-align: center;
+    margin: 15px auto 0; /* Уменьшаем верхний отступ и убираем нижний */
+    width: fit-content;
+    color: #FCEDDE;
+    text-decoration: none;
+    position: relative;
+}
+
+.no-login:hover {
+    text-decoration: underline solid #FCEDDE 2px;
+}

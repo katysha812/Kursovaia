@@ -1,0 +1,68 @@
+/*Отзывы*/
+.statistic-container{
+    padding: 100px 20px 150px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px; /*Ширина контейнера*/
+    margin: 0 auto; /*Блок располагается по центру и имеет определенные отступы?*/
+}
+
+.statistic-container h1{
+    font-weight: 700;
+    font-size: 48px;
+    color: #DA627D;
+    margin-bottom: 60px;
+}
+
+
+.card-statistic {
+    background: url('../assets/images/CardStatistics.svg');
+    background-size: cover; /* Чтобы фоновая картинка заполняла всю карточку */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 45px 0px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.pic-user img{
+    min-width: 400px;
+}
+
+.pic-user {
+    padding: 0px 60px;
+}
+
+.text-statistic{
+    max-width: 100%;
+}
+
+.text-statistic h2{
+    font-size: 48px; /*Размер текста*/
+    font-weight: 700; /*Жирность текста*/
+    white-space: nowrap; /* Предотвращает перенос текста */
+    color: #DA627D;
+    margin-bottom: 10px;
+}
+.text-statistic p{
+    font-size: 36px; /*Размер текста*/
+    width: 80%;
+}
+
+.pic-user h3{
+    font-size: 36px; /*Размер текста*/
+    color: #DA627D;
+    font-weight: 700; /*Жирность текста*/
+    white-space: nowrap; /* Предотвращает перенос текста */
+    margin-top: 25px;
+}
+
+.pic-user p{
+    font-size: 32px; /*Размер текста*/
+    white-space: nowrap; /* Предотвращает перенос текста */
+    color: #DA627D;
+}

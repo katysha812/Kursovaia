@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Торты на заказ</title>
     <Link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/contacts.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/toppings.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/customcakes.css" type="text/css"/>
 </head>
 <body>
     <div class="wrapper">

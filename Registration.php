@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Начинки</title>
+    <title>Регистрация</title>
     <Link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/registration.css" type="text/css"/>
 </head>
 <body>
     <div class="wrapper">
@@ -42,7 +43,7 @@
                     <input type="text" class="one-line">
 
                     <label>Почта</label>
-                    <input type="text" class="one-line">
+                    <input type="email" class="one-line">
 
                     <label>Дата рождения</label>
                     <input type="text" class="one-line">
@@ -57,7 +58,7 @@
                         </div>
                         <div>
                             <label>Пароль</label>
-                            <input type="text">
+                            <input type="password">
                         </div>
                     </div>
                     <a href="Login.php">Уже есть аккаунт</a>

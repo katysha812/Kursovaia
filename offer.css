@@ -1,0 +1,74 @@
+/*Карточка предложения*/
+
+.card-offer {
+    background: url('../assets/images/CardOffer.svg');
+    background-size: cover; /* Чтобы фоновая картинка заполняла всю карточку */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px; /*Отступ сверху внутри карточки*/
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 140px 0;
+}
+
+.offer-content { /*Контейнер для карточки и текста предложения*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две равные колонки */ 
+    gap: 70px; /*Отступы от карточек*/
+}
+
+.offer-content img{
+    width: 100%; /* 100% ширины*/
+    object-fit: contain; /*Картинка масштабируется, чтобы целиком уместиться в заданные размеры с соблюдением пропорций.*/
+    height: 100%; /* Занимает всю высоту колонки */
+    object-position: left bottom; /* Выравнивание по низу */
+}
+
+.text-offer{
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Занимает всю высоту */
+    justify-content: space-between; /* Равномерное распределение пространства */
+}
+
+.text-offer h3{
+    color: #DA627D;
+    font-weight: 700;
+    font-size: 40px;
+    width: calc(80%);
+}
+
+.text-offer p{
+    margin-top: 15px;
+    font-size: 38px;
+    height: 100%; /* Занимает всю высоту */
+    justify-content: space-between; /* Равномерное распределение пространства */
+    margin-top: 5%;
+    margin-bottom: auto; /* Автоматический отступ для прижатия кнопки вниз */
+}
+
+.text-offer .btn{
+    background: #DA627D;
+    color: #FCEDDE;
+    border-radius: 60px;
+    border: 0; /*Уберем обводку*/
+    padding: 25px 100px; /*Отступы 25 пикселей по высоте и 50 по горизонтали*/
+    font-size: 38px;
+    font-weight: 700;
+    align-self: flex-start;
+    transition: all 500ms ease;
+    width: 100%;
+    height: 30%;
+}
+
+.text-offer .btn:hover{
+    background: #ED8494;
+}
+
+.text-offer .btn a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <Link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/contacts.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/offer.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/toppings.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/statistic.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/slogan.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/reviews.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/popup.css" type="text/css"/>
+    <Link rel="stylesheet" href="css/customcakes.css" type="text/css"/>
 </head>
 <body>
     
@@ -219,6 +227,6 @@
         <!-- Контакты -->
         <?php require_once "blocks/cont.php"; ?>
     </div>
-<script src="js/main.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

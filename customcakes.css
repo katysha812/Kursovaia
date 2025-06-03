@@ -1,0 +1,67 @@
+/*Тортики*/
+
+
+.container-cakes{
+    padding-top: 100px; 
+    padding-bottom: 150px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px; /*Ширина контейнера*/
+    margin: 0 auto; /*Блок располагается по центру и имеет определенные отступы?*/
+}
+
+.container-cakes h1{
+    font-weight: 700;
+    font-size: 48px;
+    color: #DA627D;
+    margin-bottom: 60px;
+}
+
+.cards-cakes { /*Контейнер для карточек*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px; /*Отступы от карточек*/
+}
+
+.card-cake{
+    background: url('../assets/images/CardCakes.svg');
+    background-size: cover; /* Чтобы фоновая картинка заполняла всю карточку */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0px; /*Отступ сверху внутри карточки*/
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.cake img{
+    width: calc(100% - 60px); /* 100% ширины минус 30px с каждой стороны */
+    object-fit: contain; /*Картинка масштабируется, чтобы целиком уместиться в заданные размеры с соблюдением пропорций.*/
+}
+
+.cake .btn{
+    background: #DA627D;
+    color: #FCEDDE;
+    border-radius: 25px;
+    border: 0; /*Уберем обводку*/
+    padding: 10px calc(22%); /*Отступы 15 пикселей по высоте и 30 по горизонтали*/
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: all 500ms ease;
+}
+
+.cake .btn:hover { /*Кнопка оформления заявки при нажатии*/
+    background: #ED8494;
+}
+
+
+.cake h3 {
+    margin-left: 30px; /*Отступ сбокууу */
+}
+
+.cake p {
+    margin-left: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+}
